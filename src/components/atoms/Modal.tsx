@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from '@styles/modal.module.css';
 import { useAtomValue } from 'jotai/utils';
-import { modalVisible } from '@src/stores';
+import { modalVisible } from '@stores';
 
 const Modal: React.FC = ({ children }) => {
   const visible = useAtomValue(modalVisible);

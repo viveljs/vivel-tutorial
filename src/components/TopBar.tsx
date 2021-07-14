@@ -4,7 +4,7 @@ import styles from '@styles/topbar.module.css';
 import useSound from 'use-sound';
 import pop from '@sfx/pop.mp3';
 import { useAtom } from 'jotai';
-import { volumeAtom } from '@src/stores';
+import { volumeAtom } from '@stores';
 
 const TopBar: React.FC = () => {
   const [play] = useSound(pop);
