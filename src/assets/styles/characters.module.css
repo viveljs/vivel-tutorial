@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex justify-around max-h-240 items-end;
+}
+
+.character {
+  @apply max-h-2/3;
+}
