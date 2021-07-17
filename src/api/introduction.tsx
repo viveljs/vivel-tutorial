@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScriptProps } from '@src/types';
+import { ScriptProps } from '../types';
 import { Button } from '../components/atoms';
 
 const Introduction: ScriptProps = {

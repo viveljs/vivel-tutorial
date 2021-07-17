@@ -1,5 +1,5 @@
 import { atomWithReset } from 'jotai/utils';
-import { DialogueProps } from '@src/types';
+import { DialogueProps } from '../types';
 
 const dialogueAtom = atomWithReset<DialogueProps>({} as DialogueProps);
 const bgmAtom = atomWithReset<string>('default');

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScriptProps } from '@src/types';
+import { ScriptProps } from '../types';
 
 const Script: ScriptProps = {
   background: 'office',

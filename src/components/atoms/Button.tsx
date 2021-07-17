@@ -9,7 +9,7 @@ import {
   lineIndex,
   sceneAtom,
 } from '../../stores';
-import { ButtonProps } from '@src/types';
+import { ButtonProps } from '../../types';
 import pop from '@sfx/pop.mp3';
 import styles from '@styles/buttons.module.css';
 
