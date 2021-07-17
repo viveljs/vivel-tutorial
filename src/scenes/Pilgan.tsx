@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { useAtomValue, useUpdateAtom } from 'jotai/utils';
-import { Characters, Dialogue, Scene, TopBar } from '@components';
-import { Script } from '@api/pilihanganda';
+import { Characters, Dialogue, Scene, TopBar } from '../components';
+import { Script } from '../api/pilihanganda';
 import {
   backgroundAtom,
   bgmAtom,
   dialogueAtom,
   dialogueIndex,
-} from '@stores';
+} from '@stores/index';
 
 const Introduction: React.FC = () => {
   const setDialogue = useUpdateAtom(dialogueAtom);
