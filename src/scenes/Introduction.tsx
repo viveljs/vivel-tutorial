@@ -26,9 +26,9 @@ const Introduction: React.FC = () => {
 
   return (
     <Scene>
-      <Dialogue />
       <TopBar />
       <Characters />
+      <Dialogue />
     </Scene>
   );
 };

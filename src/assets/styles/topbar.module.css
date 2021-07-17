@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex justify-between w-7/8 py-2;
+  @apply flex justify-between w-7/8 py-2 fixed top-0;
 }
 
 .button {

@@ -7,9 +7,6 @@ const Scene: React.FC = ({ children }) => {
   const backgroundDefault = useAtomValue(backgroundAtom);
   const backgroundList = useAtomValue(backgroundsAtom);
 
-  // const music =
-  //   sounds[Object.keys(sounds).find((x) => x.includes(bgm)) as string].default;
-
   const background =
     dialogue && Object.keys(dialogue).length > 0
       ? dialogue.background

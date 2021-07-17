@@ -6,6 +6,6 @@ body {
 }
 
 main {
-  @apply h-screen flex flex-col items-center justify-between;
+  @apply h-screen flex flex-col items-center justify-end;
   @apply bg-cover bg-bottom;
 }
