@@ -2,7 +2,7 @@ import * as React from 'react';
 import { WindupChildren, useSkip, useIsFinished } from 'windups';
 import { Button } from './atoms';
 import { useAtomValue } from 'jotai/utils';
-import { dialogueAtom, lineIndex } from '@stores/index';
+import { dialogueAtom, lineIndex } from '../stores/index';
 import styles from '@styles/dialogue.module.css';
 
 const LinesContainer: React.FC = ({ children }) => {

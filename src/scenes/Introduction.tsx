@@ -7,7 +7,7 @@ import {
   bgmAtom,
   dialogueAtom,
   dialogueIndex,
-} from '@stores/index';
+} from '../stores/index';
 
 const Introduction: React.FC = () => {
   const setDialogue = useUpdateAtom(dialogueAtom);

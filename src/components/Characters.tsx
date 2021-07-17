@@ -1,4 +1,4 @@
-import { charactersAtom, dialogueAtom } from '@stores/index';
+import { charactersAtom, dialogueAtom } from '../stores/index';
 import { useAtomValue } from 'jotai/utils';
 import * as React from 'react';
 import styles from '@styles/characters.module.css';

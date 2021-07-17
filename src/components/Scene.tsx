@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useAtomValue } from 'jotai/utils';
-import { backgroundAtom, backgroundsAtom, dialogueAtom } from '@stores/index';
+import { backgroundAtom, backgroundsAtom, dialogueAtom } from '../stores/index';
 
 const Scene: React.FC = ({ children }) => {
   const dialogue = useAtomValue(dialogueAtom);
