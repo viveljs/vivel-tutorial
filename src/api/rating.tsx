@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ScriptProps } from '../types';
+import { Rating } from './components';
 
 const Script: ScriptProps = {
   background: 'office',
@@ -24,15 +25,7 @@ const Script: ScriptProps = {
       lines: [
         'Lihat, ada 5 icon bintang! Coba beri penilaian untuk tutorialku sejauh ini. Semakin ke kanan bintang yang kamu klik, artinya penilaian yang diberikan semakin baik.',
       ],
-      option: <div></div>,
-    },
-    {
-      characters: ['Putri'],
-      mood: ['approved'],
-      background: 'office',
-      lines: [
-        'Nice! Selama bermain nanti jangan ragu untuk memilih pilihan yang paling sesuai dengan dirimu ya.',
-      ],
+      option: <Rating />,
     },
   ],
 };

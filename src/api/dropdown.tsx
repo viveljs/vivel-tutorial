@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ScriptProps } from '../types';
+import { Dropdown } from './components';
 
 const Script: ScriptProps = {
   background: 'office',
@@ -36,6 +37,7 @@ const Script: ScriptProps = {
       lines: [
         'Untuk melengkapi pesan di atas, klik pada bagian yang kosong, lalu klik pilihan kata yang ingin digunakan. Pastikan semua sudah terisi sebelum kamu melanjutkan ya.',
       ],
+      option: <Dropdown />,
     },
   ],
 };

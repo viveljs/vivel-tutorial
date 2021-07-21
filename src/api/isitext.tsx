@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { ScriptProps } from '../types';
+import { TextArea } from 'semantic-ui-react';
+import { Button } from '../components/atoms';
+import styles from '../assets/styles/option.module.css';
 
 const Script: ScriptProps = {
   background: 'office',
@@ -32,6 +35,12 @@ const Script: ScriptProps = {
       lines: [
         ' Kamu tinggal klik kotak teks di atas dan ketik apa yang ingin kamu sampaikan. Tenang aja, Putri orangnya bisa jaga rahasia kok.',
       ],
+      option: (
+        <div className={styles.optionFlex}>
+          <TextArea />
+          <Button scene="zoom" text="Bisaaa..." />
+        </div>
+      ),
     },
   ],
 };

@@ -18,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   lines = false,
   dialogue = false,
   scene,
+  disabled = false,
 }) => {
   const [clicked] = useSound(pop);
   const [getlineIndex, setLineIndex] = useAtom(lineIndex);
@@ -45,6 +46,7 @@ const Button: React.FC<ButtonProps> = ({
         scene && nextScene();
       }}
       className={styles.Button}
+      disabled={disabled}
     >
       {response ?? text ?? '...'}
     </button>

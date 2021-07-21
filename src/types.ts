@@ -20,6 +20,7 @@ interface ButtonProps {
   lines?: boolean;
   dialogue?: boolean;
   scene?: string;
+  disabled?: boolean;
 }
 
 export type { ScriptProps, ButtonProps, DialogueProps };
