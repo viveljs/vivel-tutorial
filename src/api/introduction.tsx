@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ScriptProps } from '../types';
 import { Button } from '../components/atoms';
+import { Name } from './components';
 
 const Introduction: ScriptProps = {
   bgm: 'piano',
@@ -22,6 +23,7 @@ const Introduction: ScriptProps = {
       lines: [
         'Yes, gampang banget kan! Halo, namaku Putri. Agar aku bisa tahu namamu, silahkan klik kotak isian di atas, ketik nama panggilanmu, lalu klik tombol next ya!',
       ],
+      option: <Name />,
     },
     {
       characters: ['Putri'],

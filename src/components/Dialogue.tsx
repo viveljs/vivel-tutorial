@@ -4,6 +4,8 @@ import { Button } from './atoms';
 import { useAtomValue } from 'jotai/utils';
 import { dialogueAtom, lineIndex } from '../stores/index';
 import styles from '@styles/dialogue.module.css';
+import 'semantic-ui-css/semantic.min.css';
+import { replace } from '../lib/lineReplace';
 
 const LinesContainer: React.FC = ({ children }) => {
   const skip = useSkip();
@@ -20,7 +22,7 @@ const LinesContainer: React.FC = ({ children }) => {
 const Lines: React.FC<{ text: string }> = ({ text }) => {
   return (
     <WindupChildren>
-      <LinesContainer>{text}</LinesContainer>
+      <LinesContainer>{replace(text)}</LinesContainer>
     </WindupChildren>
   );
 };

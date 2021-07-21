@@ -16,12 +16,13 @@ const Game = () => {
   const scenes = useAtomValue(scenesAtom);
   const sounds = useAtomValue(soundsAtom);
   const bgm = useAtomValue(bgmAtom);
-  const volume = useAtomValue(volumeAtom);
 
   const music =
     sounds[Object.keys(sounds).find((x) => x.includes(bgm)) as string].default;
 
   const PlayMusic = () => {
+    const volume = useAtomValue(volumeAtom);
+
     const [play, { stop }] = useSound(music, {
       interrupt: true,
       loop: true,
@@ -30,13 +31,10 @@ const Game = () => {
 
     React.useEffect(() => {
       play();
-    }, [play]);
-
-    React.useEffect(() => {
       return () => {
         stop();
       };
-    }, [stop]);
+    }, [play]);
 
     return <div></div>;
   };

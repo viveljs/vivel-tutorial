@@ -13,3 +13,4 @@ export {
   scenesAtom,
 } from './assets';
 export { modalVisible, volumeAtom } from './utils';
+export { name, character } from './variables';

@@ -1,2 +1,3 @@
 export { Name } from './Name';
-export { NextScene } from './NextScene';
+export { Character } from './Character';
+export { Rating } from './Rating';

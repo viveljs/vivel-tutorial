@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ScriptProps } from '../types';
+import { Button } from '../components/atoms';
 
 const Script: ScriptProps = {
   background: 'office',
@@ -35,12 +36,19 @@ const Script: ScriptProps = {
       lines: [
         'Untuk memilih jawaban, klik salah satu dari kotak pilihan di atas.',
       ],
+      option: (
+        <div className="flex flex-col space-x-0 space-y-2 lg:space-y-0 lg:space-x-2 lg:flex-row">
+          <Button text="Putri, kamu cantik banget deh!" dialogue />
+          <Button text="Okay, sudah mengerti!" scene="pilganx" />
+        </div>
+      ),
     },
     {
       characters: ['Putri'],
       mood: ['satisfied'],
       background: 'office',
       lines: ['Ah kamu bisa aja, thank you $[name].'],
+      option: <Button text="Sama-sama !!" scene="pilganx" />,
     },
   ],
 };
