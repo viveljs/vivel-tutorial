@@ -1,12 +1,12 @@
-import { atomWithReset } from 'jotai/utils';
+import { atom } from 'jotai';
 import { DialogueProps } from '../types';
 
-const dialogueAtom = atomWithReset<DialogueProps>({} as DialogueProps);
-const bgmAtom = atomWithReset<string>('default');
-const dialogueIndex = atomWithReset<number>(0);
-const lineIndex = atomWithReset<number>(0);
-const sceneAtom = atomWithReset<string>('opening');
-const backgroundAtom = atomWithReset<string>('');
+const dialogueAtom = atom<DialogueProps>({} as DialogueProps);
+const bgmAtom = atom<string>('default');
+const dialogueIndex = atom<number>(0);
+const lineIndex = atom<number>(0);
+const sceneAtom = atom<string>('opening');
+const backgroundAtom = atom<string>('');
 
 export {
   dialogueAtom,
