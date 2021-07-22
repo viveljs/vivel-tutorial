@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Button } from '../components/atoms';
-import Zoom from '../scenes/Zoom';
 import { ScriptProps } from '../types';
 
 const Script: ScriptProps = {
@@ -35,7 +34,6 @@ const Script: ScriptProps = {
         'Bila muncul kotak seperti di atas, klik ikon kaca pembesar untuk memperbesar gambar. Lalu klik panah kanan dan kiri untuk melihat informasi lainnya.',
         'Pastikan kamu melihat semua informasinya ya!',
       ],
-      option: <Zoom />,
     },
     {
       characters: ['Putri'],
